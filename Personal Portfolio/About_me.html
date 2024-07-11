@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+     
+      
+  
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" ">
+    <div class="container-fluid" id="marg">
+      <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-amd" viewBox="0 0 16 16">
+        <path d="m.334 0 4.358 4.359h7.15v7.15l4.358 4.358V0zM.2 9.72l4.487-4.488v6.281h6.28L6.48 16H.2z"/>
+      </svg><a href="index.html" class="mold">teCN<div id="animate"></div>s</a>  </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="About_me.html" style="margin-left:30px;">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="Projects.html">Projects</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Social Handles
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <!-- <li><hr class="dropdown-divider"></li>  -->
+              <li><a class="dropdown-item"   href="www.linkedin.com/in/praveenjha07"><img src="./linkedin-logo-free-download-free-png.webp" height=35 width=35>LinkedIn</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item"   href="https://github.com/Praveen7j7"><img src="./github_PNG40.png" height=35 width=35>Github</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="https://leetcode.com/u/altraneto/"><img src="./OIP.jpeg" height=35 width=35">LeetCode</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="https://codeforces.com/profile/Akincana"><img src="./codeforces.png" height=35 width=35">Codeforces </a></li>
+            </ul>
+          </li>
+         
+        </ul>
+        <form class="d-flex">
+          <input type="text" id="searchTerm" placeholder="Enter word to search" aria-label="Search" class="form-control me-2">
+        </form>
+      </div>
+    </div>
+  </nav>
+    <div class="container">
+        
+      <div class="px-4 pt-5 my-5 text-center" bis_skin_checked="1">
+        <h1 class="display-4 fw-bold">About Me</h1>
+        <img src="./WhatsApp Image 2024-06-12 at 19.29.26_0cc38cd3.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+        <div class="col-lg-6 mx-auto" bis_skin_checked="1">
+          <p class="lead mb-4" id="aboutText">Hi, Praveen this side. A software engineer having profound grip in Data Structure and Algorithms along 
+            with full stack development. DevOps is yet another domain in which I possess in-depth knowledge.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5" bis_skin_checked="1" id="buttonContainer">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3" id="moreButton">More...</button>
+          </div>
+        </div>
+    </div>
+    <br>
+    
+    <script>
+        document.getElementById('moreButton').addEventListener('click', function() {
+            // Get references to the elements
+            const moreButton = document.getElementById('moreButton');
+            const aboutText = document.getElementById('aboutText');
+
+            // Append additional content
+            aboutText.innerHTML += '<br><br><strong><u>Technical_Skills</strong></u>';
+            aboutText.innerHTML += '<br><br><strong>Languages:</strong><br>';
+    aboutText.innerHTML += 'C++, Python, C, JavaScript, Bash, PowerShell<br><br>';
+    aboutText.innerHTML += '<strong>Technologies & Tools:</strong><br>';
+    aboutText.innerHTML += 'Git, MySQL, PostgreSQL, MongoDB, REST API, AWS, Docker<br><br>';
+    aboutText.innerHTML += '<strong>Frameworks:</strong><br>';
+    aboutText.innerHTML += 'React (JavaScript), Django, Flask, Express (Node.js)<br><br><br>';
+
+      // Create a "Contact Me" button
+      const contactButton = document.createElement('button');
+    contactButton.textContent = 'Contact Me';
+    contactButton.addEventListener('click', function() {
+        // Redirect to the contact page
+        window.location.href = 'Contact.html'; // Replace with your actual contact page URL
+    });
+    
+    // Append the button to the aboutText element
+    aboutText.appendChild(contactButton);
+
+            // Remove the "More..." button
+            moreButton.style.display = 'none';
+        });
+    </script>
+      </script>
+
+
+        <!-- //corosel code -->
+        <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./box-seam.svg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div> -->
+
+
+          <!-- // search test 
+            -->
+         
+                
+              
+          
+               
+            
+            <script>
+              document.getElementById('searchTerm').addEventListener('input', searchWord);
+      
+              function searchWord() {
+                  const searchTerm = document.getElementById('searchTerm').value;
+                  const regex = new RegExp(`(${searchTerm})`, 'gi');
+                  const elements = document.body.querySelectorAll('*:not(script):not(style):not(input):not(button)');
+      
+                  // Remove existing highlights
+                  removeHighlights();
+      
+                  if (searchTerm) {
+                      elements.forEach((element) => {
+                          if (element.children.length === 0 && element.textContent.match(regex)) {
+                              const newContent = element.textContent.replace(regex, (match) => `<span class="highlight">${match}</span>`);
+                              element.innerHTML = newContent;
+                          }
+                      });
+                  }
+              }
+      
+              function removeHighlights() {
+                  const highlights = document.querySelectorAll('.highlight');
+                  highlights.forEach((highlight) => {
+                      const parent = highlight.parentNode;
+                      parent.replaceChild(document.createTextNode(highlight.textContent), highlight);
+                      parent.normalize();
+                  });
+              }
+          </script>
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center" bis_skin_checked="1">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-amd" viewBox="0 0 16 16">
+              <path d="m.334 0 4.358 4.359h7.15v7.15l4.358 4.358V0zM.2 9.72l4.487-4.488v6.281h6.28L6.48 16H.2z"/>
+            </svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+        </ul>
+      </footer>
+            </body>
+            </html>
+            
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
+</body>
+</html>
